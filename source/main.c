@@ -48,6 +48,7 @@ int main(void) {
 	}
 
 	totalWeight = totalWeight >> 2; //shifts totalWeight to get rid of least significant bits
+	totalWeight = totalWeight & 0xFC; //gets rid of least significant bits
 	//totalWeight = totalWeight << 2;
 
 	if (difference > 80) {
